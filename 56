@@ -57,35 +57,37 @@ const styles = StyleSheet.create({
 
 
 
-
-
-
-
-
-
+____PT 2
 
 import * as React from 'react';
-import { Text, View, Button, TouchableOpacity,StyleSheet } from 'react-native';
-import {Audio} from 'expo-av';
+import { Text, View, StyleSheet } from 'react-native';
 
-class SoundButton extends React.Component {
-   playSound = async () => {
-    await Audio.Sound.createAsync(
-      { uri: 'http://soundbible.com/mp3/Buzzer-SoundBible.com-188422102.mp3' },
-      { shouldPlay: true }
-    );
-  }
-
-  render() {
-    return (
-      <TouchableOpacity
-        style={styles.button}
-        onPress={this.playSound}>
-        <Text
-          style={styles.buttonText}>
-          Press Me
-        </Text>
-      </TouchableOpacity>
+class AppHeader extends React.Component{
+  render(){
+    return(
+ 
     );
   }
 }
+
+const styles = StyleSheet.create({
+  textContainer:{
+    backgroundColor: 'blue',
+  },
+  text:{
+    color: 'white',
+    padding: 20,
+    fontSize: 22,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  }
+});
+
+
+
+
+
+
+
+
+
